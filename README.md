@@ -1,6 +1,6 @@
 ## Информация / Information
 
-Скрипт для циклического автоматизированно сбора хешей с большого количества серверов синхронизации времени контроллеров домена Microsoft Windows. Скрипт доработан на основе скрипта `https://github.com/SecuraBV/Timeroast`
+Скрипт для циклического автоматизированного сбора хешей с большого количества серверов синхронизации времени контроллеров домена Microsoft Windows. Скрипт доработан на основе скрипта `https://github.com/SecuraBV/Timeroast`
 
 A script for the cyclic automated collection of hashes from a large number of time synchronization servers of Microsoft Windows domain controllers. The script has been finalized based on the script `https://github.com/SecuraBV/Timeroast`
 
@@ -19,6 +19,7 @@ python3 timeroast_gis.py -f file.txt -o export.txt
 
 ## Пример работы / Example of work
 ```
+
 ┌──(kali㉿kali)-[~/Desktop]
 └─$ python3 timeroast_gis.py -f file.txt -o export.txt
 
@@ -45,3 +46,7 @@ Starting NTP Timeroast attack...
         Found hash for RID 60069
         Found hash for RID 60070
 ```
+
+## Дальнейшая эксплуатация / Further operation
+
+При наличии в инфраструктуре хостов версии `Windows NT4` или хостов, введенных в домен с включенным чекбоксом `Assign this computer account as a pre-Windows 2000 computer`, можно подобрать пароли от компьютерных учетных записей через сгенерированный словарь по их имени. Для этого необходимо использовать [hashcat beta-версии](https://hashcat.net/beta/).
