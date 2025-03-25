@@ -50,3 +50,5 @@ Starting NTP Timeroast attack...
 ## Дальнейшая эксплуатация / Further operation
 
 При наличии в инфраструктуре хостов версии `Windows NT4` или хостов, введенных в домен с включенным чекбоксом `Assign this computer account as a pre-Windows 2000 computer`, можно подобрать пароли от компьютерных учетных записей через сгенерированный словарь по их имени. Для этого необходимо использовать [hashcat beta-версии](https://hashcat.net/beta/).
+
+If there is a `Windows NT4` version of hosts in the infrastructure or hosts entered into the domain with the `Assign this computer account as a pre-Windows 2000 computer` checkbox enabled, you can select passwords from computer accounts through the generated dictionary by their name. To do this, you need to use [hashcat beta versions](https://hashcat.net/beta/).
